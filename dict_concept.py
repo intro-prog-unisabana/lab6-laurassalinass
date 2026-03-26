@@ -1,7 +1,7 @@
 def get_config():
-    return{
+    return {
         "width": 480,
-        "height": 480
-        "color_mode":"dark"
+        "height": 480,
+        "color_mode":"dark",
         "sensitivity": 0.4
     }
