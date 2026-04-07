@@ -1,6 +1,6 @@
 def show_inventory(inventory):
     print("\nCurrent Inventory:")
-    for fruit, stock in inventory.items():  # ✅ corregido
+    for fruit, stock in inventory.items():  
         print(f"{fruit}: {stock}")
     print()
 
@@ -10,14 +10,14 @@ def add_fruit(inventory):
         print(f"{fruit} already exists!\n")
     else:
         stock = input(f"Enter stock for {fruit}: ")
-        inventory[fruit] = int(stock)  # ✅ corregido
+        inventory[fruit] = int(stock)  
         print(f"{fruit} added with stock {stock}.\n")
 
 def update_stock(inventory):
     fruit = input("Enter the name of the fruit to update: ").strip()
-    if fruit in inventory:  # ✅ corregido
+    if fruit in inventory: 
         amount = input(f"Enter amount to add to {fruit}'s stock: ")
-        inventory[fruit] += int(amount)  # ✅ corregido
+        inventory[fruit] += int(amount) 
         print(f"{fruit} stock increased by {amount}.\n")
     else:
         print(f"{fruit} is not in inventory. Use option 2 to add it.\n")
@@ -34,7 +34,7 @@ def run_program():
         "apples": 10,
         "bananas": 20,
         "oranges": 15
-    }  # ✅ corregido (faltaban comas)
+    }
 
     print("Welcome to the Fruit Shop!\n")
 
